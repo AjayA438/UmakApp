@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Campus OS",
+    "slug": "campus-os",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "campusos",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#14532D",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.campusos.mobile",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Campus OS needs access to your photos so you can set a profile picture."
+      }
+    },
+    "android": {
+      "package": "app.campusos.mobile",
+      "permissions": [
+        "READ_MEDIA_IMAGES"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Campus OS needs access to your photos so you can set a profile picture."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
